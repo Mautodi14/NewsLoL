@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial de League Of Legends</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<!--Cuerpo-->
+
+<body>
+    <!--Header con menu-->
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <!--Logo con icono-->
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">News<span class="logo__bold">LoL </span><svg
+                            xmlns="http://www.w3.org/2000/svg" width="4.2rem" height="4.2rem" fill="currentColor"
+                            class="bi bi-joystick" viewBox="0 0 16 16">
+                            <path
+                                d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z" />
+                            <path
+                                d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z" />
+                        </svg></h1>
+                </a>
+                <!--Clase navegacion, barra superior derecha-->
+                <nav class="navegacion">
+                    <a href="equipos.html" class="navegacion__enlace">Equipos <svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-file-person-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z" />
+                        </svg></a>
+                    <a href="mundial.html " class="navegacion__enlace">Fases <svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-diagram-3-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zm-6 8A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm6 0A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1z" />
+                        </svg></a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto<svg xmlns="http://www.w3.org/2000/svg"
+                            width="4.2rem" height="16" fill="currentColor" class="bi bi-mailbox2" viewBox="0 0 16 16">
+                            <path
+                                d="M9 8.5h2.793l.853.854A.5.5 0 0 0 13 9.5h1a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5H9v1z" />
+                            <path
+                                d="M12 3H4a4 4 0 0 0-4 4v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a4 4 0 0 0-4-4zM8 7a3.99 3.99 0 0 0-1.354-3H12a3 3 0 0 1 3 3v6H8V7zm-3.415.157C4.42 7.087 4.218 7 4 7c-.218 0-.42.086-.585.157C3.164 7.264 3 7.334 3 7a1 1 0 0 1 2 0c0 .334-.164.264-.415.157z" />
+                        </svg></a>
+
+                    <a href="inicio.html" class="navegacion__enlace">Cerrar sesión <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg></a>
+                </nav>
+            </div>
+        </div>
+        <!--TEXTO DE EN MEDIO HEADER-->
+        <div class="header__texto sombra__texto">
+            <marquee>
+                <h3 class="no-margin">El mundial de League Of Legends. <i class='bx bxs-crown'></i></h3>
+            </marquee>
+        </div>
+    </header>
+
+    <!--APARTADO NOTICIAS-->
+
+    <center>
+        <h3 class="titulo_noticias"> Noticias relevantes. <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem"
+                height="2.5rem" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+                <path
+                    d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z" />
+                <path
+                    d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z" />
+            </svg></h3>
+    </center>
+
+    <div class="contenedor_noticias">
+        <div class="card">
+            <img src="img/Worlds.jfif">
+            <h4>Fechas de la gran cita.</h4>
+            <p>Riot Games ha confirmado el inicio de la cita más importante, del día 29 de Septiembre a 4 de Octubre da
+                inicio la fase de Play-In, se jugará en México.
+                Fase de grupos, del 7 de Octubre al 16 de Octubre en la ciudad de New York.
+                Todo esto nos llevará a la misma ciudad en las fechas del 29 y 30 de Octubre donde se jugaran las
+                semifinales.
+                Y para finalizar el día 5 de Noviembre conoceremos al mejor equipo del mundo, la final se jugará en la
+                ciudad de San Francisco en el increíble Chase Center.</p>
+            <!--Boton-->
+            <button class="boton">
+                <div class="icono">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                    </svg>
+                </div>
+                <span><a href="mundial.html" class="boton boton--primario">Sorteo de equipos.</a></span>
+            </button>
+            <p> </p>
+        </div>
+
+        <div class="card">
+            <img src="img/G2SAD.jpg">
+            <h4>G2 pierde la LEC.</h4>
+            <p>G2 Esports pierde la final de la LEC de forma impresionante, con un contundente 3-0 contra el equipo de
+                Rogue, es la primera vez que G2 pierde una final de esta forma, ante un equipo que viene demasiado
+                fuerte a estos mundiales.
+                De esta forma G2 pasó como segundo seed para los mundiales, ¿Logrará ser de los mejores equipos del
+                mundo aún?, ¿Seguirá dejando en alto a EU?
+                ¿En que grupo quedará? Averigualo en la fase de grupos.</p>
+
+            <button class="boton">
+                <div class="icono">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                    </svg>
+                </div>
+                <span><a href="mundial.html" class="boton boton--primario">Fase de grupos.</a></span>
+            </button>
+            <p> </p>
+        </div>
+
+        <div class="card">
+            <img src="img/GeG campeon.jfif">
+            <h4>T1 pierde contra GenG</h4>
+            <p>T1 considerado uno de los mejores roaster de la historia, pierden contra un GenG fuerte y potente,
+                demostroser de los mejores equipos del mundo, pero GenG fue totalmente superior, al igual que G2 nadie
+                se esperaba esta derrota, simplemente el equipo enemigo sorprendio a todos.😯
+                De esta form T1 terminó pasando como segundo ligar de la LCK, mientras que GenG estará representando
+                como el mejor equipo coreano.
+            </p>
+
+            <button class="boton">
+                <div class="icono">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                    </svg>
+                </div>
+                <span><a href="mundial.html" class="boton boton--primario">¿En qué grupo quedaron?</a></span>
+            </button>
+            <p> </p>
+        </div>
+    </div>
+
+    <!--FOOTER DE LA PAGINA-->
+    <footer>
+        <a class="logo__footer" href="index.html">
+            <h3 class="logo__nombref no-margin centrar-texto">News<span class="logo__boldf">LoL.</span></h3>
+        </a>
+        <h5 class="autor">Derechos reservados | Mauricio Torres Díaz &copy</h5>
+        <div class="icons-wrapper">
+            <a href="https://www.twitter.com/mautodi14" target="_blank"><i class="bi bi-twitter icono_redes"></i></a>
+            <a href="https://github.com/Mautodi14" target="_blank"><i class="bi bi-github icono_redes"></i></a>
+            <a href="https://www.twitter.com/mautodi14" target="_blank"><i class="bi bi-instagram icono_redes"></i><a href="https://www.twitter.com/mautodi14" target="_blank"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

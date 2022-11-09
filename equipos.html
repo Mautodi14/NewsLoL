@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial de League Of Legends</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body class="body_equipos">
+    <header class="header__equipos">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">News<span class="logo__bold">LoL </span><svg
+                            xmlns="http://www.w3.org/2000/svg" width="4.2rem" height="4.2rem" fill="currentColor"
+                            class="bi bi-joystick" viewBox="0 0 16 16">
+                            <path
+                                d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z" />
+                            <path
+                                d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z" />
+                        </svg></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="equipos.html" class="navegacion__enlace">Equipos <svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-file-person-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z" />
+                        </svg></a>
+                    <a href="mundial.html" class="navegacion__enlace">Fases <svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-diagram-3-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zm-6 8A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm6 0A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1z" />
+                        </svg></a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto<svg xmlns="http://www.w3.org/2000/svg"
+                            width="4.2rem" height="16" fill="currentColor" class="bi bi-mailbox2" viewBox="0 0 16 16">
+                            <path
+                                d="M9 8.5h2.793l.853.854A.5.5 0 0 0 13 9.5h1a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5H9v1z" />
+                            <path
+                                d="M12 3H4a4 4 0 0 0-4 4v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a4 4 0 0 0-4-4zM8 7a3.99 3.99 0 0 0-1.354-3H12a3 3 0 0 1 3 3v6H8V7zm-3.415.157C4.42 7.087 4.218 7 4 7c-.218 0-.42.086-.585.157C3.164 7.264 3 7.334 3 7a1 1 0 0 1 2 0c0 .334-.164.264-.415.157z" />
+                        </svg></a>
+                    <a href="inicio.html" class="navegacion__enlace">Cerrar sesión <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="menu">
+        <h3 class="titulo_noticias"> Ligas. <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem"
+                fill="currentColor" class="bi bi-dpad-fill" viewBox="0 0 16 16">
+                <path
+                    d="M6.5 0A1.5 1.5 0 0 0 5 1.5v3a.5.5 0 0 1-.5.5h-3A1.5 1.5 0 0 0 0 6.5v3A1.5 1.5 0 0 0 1.5 11h3a.5.5 0 0 1 .5.5v3A1.5 1.5 0 0 0 6.5 16h3a1.5 1.5 0 0 0 1.5-1.5v-3a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 0 16 9.5v-3A1.5 1.5 0 0 0 14.5 5h-3a.5.5 0 0 1-.5-.5v-3A1.5 1.5 0 0 0 9.5 0h-3Zm1.288 2.34a.25.25 0 0 1 .424 0l.799 1.278A.25.25 0 0 1 8.799 4H7.201a.25.25 0 0 1-.212-.382l.799-1.279Zm0 11.32-.799-1.277A.25.25 0 0 1 7.201 12H8.8a.25.25 0 0 1 .212.383l-.799 1.278a.25.25 0 0 1-.424 0Zm-4.17-4.65-1.279-.798a.25.25 0 0 1 0-.424l1.279-.799A.25.25 0 0 1 4 7.201V8.8a.25.25 0 0 1-.382.212Zm10.043-.798-1.278.799A.25.25 0 0 1 12 8.799V7.2a.25.25 0 0 1 .383-.212l1.278.799a.25.25 0 0 1 0 .424Z" />
+        </h3>
+    </section>
+
+    <div class="contenedor_menu">
+        <nav class="menu">
+            <input type="checkbox" id="menu-toggler" class="menu-toggler">
+            <label for="menu-toggler"></label>
+            <ul>
+                <li class="menu-item">
+                    <a href="#LPL" class="liga"><img src="img/lpl.png"></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#LEC" class="liga"><img src="img/lec.png"></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#LCS" class="liga"><img src="img/lcs.webp"></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#LCK" class="liga"><img src="img/lckn.webp"></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#LLAyLJL" class="liga"><img src="img/lla.png"></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#TCLyCBLOL" class="liga"><img src="img/CBLOL.webp"></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#LCO" class="liga"><img src="img/LCO.webp"></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#LLAyLJL" class="liga"><img src="img/LJL.webp"></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#PCS" class="liga"><img src="img/PCS.webp"></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#TCLyCBLOL" class="liga"><img src="img/TCL.png"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--lPL-->
+    <section id="LPL">
+        <div class="grid-container">
+            <div class="nombre_liga titulo_noticias"><img src="img/lpl.png" class="img_liga"> LPL. </div>
+            <div class="item1">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/jdg/jdg.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>JDG Gaming</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/jdg/369.webp" class="img_roaster">
+                            <img src="img/jdg/kanavi.png" class="img_roaster">
+                            <img src="img/jdg/yagao.png" class="img_roaster">
+                            <img src="img/jdg/HOPE.webp" class="img_roaster">
+                            <img src="img/jdg/missing.webp" class="img_roaster">
+                            <img src="img/jdg/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="item2">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/top esports/top.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>TOP Esports</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/top esports/wayward.webp" class="img_roaster">
+                            <img src="img/top esports/tian.webp" class="img_roaster">
+                            <img src="img/top esports/knight.png" class="img_roaster">
+                            <img src="img/top esports/jackeylove.webp" class="img_roaster">
+                            <img src="img/top esports/mark.png" class="img_roaster">
+                            <img src="img/top esports/crescent.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="item3">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/edg/edg.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>EDward Gaming</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/edg/top.webp" class="img_roaster">
+                            <img src="img/edg/jg.webp" class="img_roaster">
+                            <img src="img/edg/mid.webp" class="img_roaster">
+                            <img src="img/edg/adc.webp" class="img_roaster">
+                            <img src="img/edg/sup.webp" class="img_roaster">
+                            <img src="img/edg/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="item4">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/rng/rng.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>Royal Never Give Up</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/rng/top.webp" class="img_roaster">
+                            <img src="img/rng/jg.webp" class="img_roaster">
+                            <img src="img/rng/mid.webp" class="img_roaster">
+                            <img src="img/rng/adc.webp" class="img_roaster">
+                            <img src="img/rng/sup.webp" class="img_roaster">
+                            <img src="img/rng/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="boton_liga">
+                <a href="#menu" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    VOLVER
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--LCK-->
+    <section id="LCK">
+        <div class="grid-container">
+            <div class="nombre_liga titulo_noticias"><img src="img/lck.png" class="img_liga"> LCK.</div>
+            <div class="item1">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/GenG/GenG.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>Gen G</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/genG/top.webp" class="img_roaster">
+                            <img src="img/genG/jg.webp" class="img_roaster">
+                            <img src="img/genG/mid.webp" class="img_roaster">
+                            <img src="img/genG/adc.webp" class="img_roaster">
+                            <img src="img/genG/sup.webp" class="img_roaster">
+                            <img src="img/genG/coach.png" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="item2">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/T1/t1.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>T1</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/t1/top.webp" class="img_roaster">
+                            <img src="img/t1/jg.webp" class="img_roaster">
+                            <img src="img/t1/mid.webp" class="img_roaster">
+                            <img src="img/t1/adc.webp" class="img_roaster">
+                            <img src="img/t1/sup.webp" class="img_roaster">
+                            <img src="img/t1/coach.png" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="item3">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/damwon/damwon.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>Damwon Gaming</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/damwon/top.webp" class="img_roaster">
+                            <img src="img/damwon/jg.webp" class="img_roaster">
+                            <img src="img/damwon/mid.webp" class="img_roaster">
+                            <img src="img/damwon/adc.webp" class="img_roaster">
+                            <img src="img/damwon/sup.webp" class="img_roaster">
+                            <img src="img/damwon/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="item4">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/drx/drx.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>DRX</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/drx/top.webp" class="img_roaster">
+                            <img src="img/drx/jg.webp" class="img_roaster">
+                            <img src="img/drx/mid.webp" class="img_roaster">
+                            <img src="img/drx/adc.webp" class="img_roaster">
+                            <img src="img/drx/sup.webp" class="img_roaster">
+                            <img src="img/drx/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="boton_liga">
+                <a href="#menu" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    VOLVER
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--LEC-->
+    <section id="LEC">
+        <div class="grid-container">
+            <div class="nombre_liga titulo_noticias"><img src="img/lec.png" class="img_liga"> LEC.</div>
+            <div class="item1">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/rogue/rogue.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>Rogue</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/rogue/top.webp" class="img_roaster">
+                            <img src="img/rogue/jg.webp" class="img_roaster">
+                            <img src="img/rogue/mid.webp" class="img_roaster">
+                            <img src="img/rogue/adc.webp" class="img_roaster">
+                            <img src="img/rogue/sup.webp" class="img_roaster">
+                            <img src="img/rogue/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="item2">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/G2/g2.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>G2 Esports</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/G2/brokenblade.webp" class="img_roaster">
+                            <img src="img/G2/jankos.webp" class="img_roaster">
+                            <img src="img/G2/caps.webp" class="img_roaster">
+                            <img src="img/G2/flakked.webp" class="img_roaster">
+                            <img src="img/G2/targamas.webp" class="img_roaster">
+                            <img src="img/G2/dylan falco.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="item3">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/FNC/fnc.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>Fnatic</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/fnc/top.webp" class="img_roaster">
+                            <img src="img/fnc/jg.webp" class="img_roaster">
+                            <img src="img/fnc/mid.webp" class="img_roaster">
+                            <img src="img/fnc/adc.webp" class="img_roaster">
+                            <img src="img/fnc/sup.webp" class="img_roaster">
+                            <img src="img/fnc/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="item4">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/MAD/mad.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>MAD Lions</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/mad/top.webp" class="img_roaster">
+                            <img src="img/mad/jg.webp" class="img_roaster">
+                            <img src="img/mad/mid.webp" class="img_roaster">
+                            <img src="img/mad/adc.webp" class="img_roaster">
+                            <img src="img/mad/sup.webp" class="img_roaster">
+                            <img src="img/mad/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="boton_liga">
+                <a href="#menu" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    VOLVER
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--LEC-->
+    <section id="LCS">
+        <div class="grid-container_3">
+            <div class="nombre_liga titulo_noticias"><img src="img/lcs.png" class="img_liga"> LCS.</div>
+            <div class="item1">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/C9/c9.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>Cloud 9</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/c9/top.webp" class="img_roaster">
+                            <img src="img/c9/jg.webp" class="img_roaster">
+                            <img src="img/c9/mid.webp" class="img_roaster">
+                            <img src="img/c9/adc.webp" class="img_roaster">
+                            <img src="img/c9/sup.webp" class="img_roaster">
+                            <img src="img/c9/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="item2">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/100t/100t.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>100 Thieves</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/100t/top.webp" class="img_roaster">
+                            <img src="img/100t/jg.webp" class="img_roaster">
+                            <img src="img/100t/mid.webp" class="img_roaster">
+                            <img src="img/100t/adc.webp" class="img_roaster">
+                            <img src="img/100t/sup.webp" class="img_roaster">
+                            <img src="img/100t/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="item5">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/eg/eg.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>Evil Geniuses</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/eg/top.webp" class="img_roaster">
+                            <img src="img/eg/jg.webp" class="img_roaster">
+                            <img src="img/eg/mid.webp" class="img_roaster">
+                            <img src="img/eg/adc.webp" class="img_roaster">
+                            <img src="img/eg/sup.webp" class="img_roaster">
+                            <img src="img/eg/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="boton_liga">
+                <a href="#menu" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    VOLVER
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--PCS-->
+    <section id="PCS">
+        <div class="grid-container_3">
+            <div class="nombre_liga titulo_noticias"><img src="img/PCSB.png" class="img_liga"> PCS.</div>
+            <div class="item1">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/cfo/cfo.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>CTBC Flying Oyster</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/cfo/top.webp" class="img_roaster">
+                            <img src="img/cfo/jg.webp" class="img_roaster">
+                            <img src="img/cfo/mid.webp" class="img_roaster">
+                            <img src="img/cfo/adc.webp" class="img_roaster">
+                            <img src="img/cfo/sup.webp" class="img_roaster">
+                            <img src="img/cfo/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="item2">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/byg/byg.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>Beyond Gaming</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/byg/top.webp" class="img_roaster">
+                            <img src="img/byg/jg.webp" class="img_roaster">
+                            <img src="img/byg/mid.webp" class="img_roaster">
+                            <img src="img/byg/adc.webp" class="img_roaster">
+                            <img src="img/byg/sup.webp" class="img_roaster">
+                            <img src="img/byg/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="item5">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/buffalo/buffalo.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>Saigon Buffalo</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/buffalo/top.webp" class="img_roaster">
+                            <img src="img/buffalo/jg.webp" class="img_roaster">
+                            <img src="img/buffalo/mid.webp" class="img_roaster">
+                            <img src="img/buffalo/adc.webp" class="img_roaster">
+                            <img src="img/buffalo/sup.webp" class="img_roaster">
+                            <img src="img/buffalo/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="boton_liga">
+                <a href="#menu" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    VOLVER
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--LCO-->
+    <section id="LCO">
+        <div class="grid-container_2">
+            <div class="nombre_liga titulo_noticias"><img src="img/LCOB.png" class="img_liga"> LCO.</div>
+            <div class="item1">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/gam/gam.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>GAM Esports</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/gam/top.webp" class="img_roaster">
+                            <img src="img/gam/jg.webp" class="img_roaster">
+                            <img src="img/gam/mid.webp" class="img_roaster">
+                            <img src="img/gam/adc.webp" class="img_roaster">
+                            <img src="img/gam/sup.webp" class="img_roaster">
+                            <img src="img/gam/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="item2">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/chief/chief.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>Chiefs Esports Club</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/chief/top.webp" class="img_roaster">
+                            <img src="img/chief/jg.webp" class="img_roaster">
+                            <img src="img/chief/mid.webp" class="img_roaster">
+                            <img src="img/chief/adc.webp" class="img_roaster">
+                            <img src="img/chief/sup.webp" class="img_roaster">
+                            <img src="img/chief/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+
+            <div class="boton_liga">
+                <a href="#menu" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    VOLVER
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="LLAyLJL">
+        <div class="grid-container_1">
+            <div class="nombre_liga titulo_noticias"><img src="img/lla.png" class="img_liga"> LLA.</div>
+            <div class="item1">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/isurus/isurus.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>Isurus</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/isurus/top.webp" class="img_roaster">
+                            <img src="img/isurus/jg.webp" class="img_roaster">
+                            <img src="img/isurus/mid.webp" class="img_roaster">
+                            <img src="img/isurus/adc.webp" class="img_roaster">
+                            <img src="img/isurus/sup.webp" class="img_roaster">
+                            <img src="img/isurus/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="nombre_liga2 titulo_noticias"><img src="img/LJL.webp" class="img_liga"> LJL.</div>
+            <div class="item2">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/dfm/dfm.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>DetonatioN FocusMe</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/dfm/top.webp" class="img_roaster">
+                            <img src="img/dfm/jg.webp" class="img_roaster">
+                            <img src="img/dfm/mid.webp" class="img_roaster">
+                            <img src="img/dfm/adc.webp" class="img_roaster">
+                            <img src="img/dfm/sup.webp" class="img_roaster">
+                            <img src="img/dfm/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="boton_liga">
+                <div class="boton_liga">
+                    <a href="#menu" class="btn-neon">
+                        <span id="span1"></span>
+                        <span id="span2"></span>
+                        <span id="span3"></span>
+                        <span id="span4"></span>
+                        VOLVER
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="TCLyCBLOL">
+        <div class="grid-container_1">
+            <div class="nombre_liga titulo_noticias"><img src="img/TCLB.png" class="img_liga"> TCL.</div>
+            <div class="item1">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/iw/iw.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>İstanbul Wildcats</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/iw/top.webp" class="img_roaster">
+                            <img src="img/iw/jg.webp" class="img_roaster">
+                            <img src="img/iw/mid.webp" class="img_roaster">
+                            <img src="img/iw/adc.webp" class="img_roaster">
+                            <img src="img/iw/sup.webp" class="img_roaster">
+                            <img src="img/iw/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="nombre_liga2 titulo_noticias"><img src="img/cblolb.webp" class="img_liga"> CBLOL.</div>
+            <div class="item2">
+                <center>
+                    <div class="contenedor__equipos">
+                        <img src="img/loud/loud.jpg" class="equipo_img">
+                        <div class="contenido_equipo">
+                            <h3>LOUD</h3>
+                        </div>
+                        <div class="img_jugadores">
+                            <img src="img/loud/top.webp" class="img_roaster">
+                            <img src="img/loud/jg.webp" class="img_roaster">
+                            <img src="img/loud/mid.webp" class="img_roaster">
+                            <img src="img/loud/adc.webp" class="img_roaster">
+                            <img src="img/loud/sup.webp" class="img_roaster">
+                            <img src="img/loud/coach.webp" class="img_roaster">
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="boton_liga">
+                <a href="#menu" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    VOLVER
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer_equipos">
+        <a class="logo__footer" href="index.html">
+            <h3 class="logo__nombref no-margin centrar-texto">News<span class="logo__boldf">LoL.</span></h3>
+        </a>
+        <h5>Derechos reservados | Mauricio Torres Díaz &copy</h5>
+        <div class="icons-wrapper">
+            <a href="https://www.twitter.com/mautodi14" target="_blank"><i class="bi bi-twitter icono_redes"></i></a>
+            <a href="https://github.com/Mautodi14" target="_blank"><i class="bi bi-github icono_redes"></i></a>
+            <a href="https://www.twitter.com/mautodi14" target="_blank"><i class="bi bi-instagram icono_redes"></i><a href="https://www.twitter.com/mautodi14" target="_blank"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
